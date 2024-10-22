@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+    color: #3c3836;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h4 {
+    font-family: 'Hack Nerd Font', Courier, monospace;
+    text-align: center;
+    color: #fbf1c7;
+}
+
+p, i {
+    font-family: 'Hack Nerd Font', Courier, monospace;
+    text-align: center;
+    color: #fbf1c7;
+}
+
+h3, a .small-line {
+    font-family: 'Hack Nerd Font', Courier, monospace;
+    text-align: center;
+    color: #282828;
+    margin: 10px 0;
+    margin-bottom: 0.1%;
+}
+
+a {
+    color: #458588;
+}
+
+.list-peneliti {
+    background: #fbf1c7;
+    padding: 20px;
+    border: solid 8px #8ec07c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1600px;
+    min-width: 400px;
+    text-align: center;
+}
+
+.container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: stretch; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin: 20px 0;
+}
+
+.box {
+    background: #fbf1c7;
+    padding: 20px;
+    border: solid 8px #8ec07c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px; 
+    max-width: 300px; 
+    text-align: center;
+    height: 150px; 
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 90%; 
+    }
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+#refreshButton {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 25px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #fbf1c7;
+    color: #000000;
+    border: solid 8px #8ec07c; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+#refreshButton:hover {
+    background-color: #f9e8b2;
+}
+
+@media (max-width: 600px) {
+    .faq-button {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+    
+    #refreshButton {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
+
+.faq-container {
+    margin: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center; 
+}
+
+.faq-button {
+    display: block; 
+    margin: 10px auto; 
+    padding: 15px 25px;
+    background-color: #fbf1c7; 
+    color: #000000; 
+    border: solid 8px #8ec07c; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.faq-button:hover {
+    background-color: #f9e8b2;
+}
+
+.faq-content {
+    display: none;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #3c3836;
+    color: #ebdbb2;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Jetbrains Mono';
+    margin-top: 30px; 
+}

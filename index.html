@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoniPonicsIoT</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>MoniPonicsIoT: <br>perangkat monitoring hidroponik berbasis IoT</h1>
+        <h2><q><i>Maximizing growth, Minimizing effort</i></q></h2>
+        <h2>SMP MUHAMMADIYAH 12 GRESIK</h2><br/>
+    </div>
+    <div class="container">
+        <div class="list-peneliti">
+            <h3>Nama Peneliti:</h3>
+            Athallah Rafif Isani <br class="small-line"/>
+            <address><a href="mailto:rafif.isani09@gmail.com">rafif.isani09@gmail.com</a></address><br/>
+            Syifa Aurellia Azzahra <br class="small-line"/>
+            <address><a href="mailto:syifaurelliaz@gmail.com">syifaurelliaz@gmail.com</a></address><br/>
+            Maulana Idlan Hakim <br class="small-line"/>
+            <address><a href="mailto:maulanaidlanhakim@gmail.com">maulanaidlanhakim@gmail.com</a></address><br/>
+            Amirah Ghaisani Zulfa <br class="small-line"/>
+            <address><a href="mailto:amirahghaisani@gmail.com">amirahghaisani@gmail.com</a></address><br/>
+            Muhammad Zayyan Maulana <br class="small-line"/>
+            <address><a href="mailto:iyanmaumakan.56@gmail.com">iyanmaumakan.56@gmail.com</a></address><br/>
+            <h3>Guru Pembimbing:</h3>
+            Yugo Triawanto, M.Si <br class="small-line"/>
+            <address><a href="mailto:yugotriawanto@gmail.com">yugotriawanto@gmail.com</a></address><br/>
+            Desy Suryani, M.Pd <br class="small-line"/>
+            <address><a href="mailto:desymber7@gmail.com">desymber7@gmail.com</a></address><br/>
+        </div>
+    </div><br/><br/>
+    <h2>Monitoring hidroponik:</h2><br/>
+    <div class="container">
+        <div class="box">
+            <h3>pH: <span id="ph-value">Loading...</span></h3>
+        </div>
+        <div class="box">
+            <h3>TDS: <span id="tds-value">Loading...</span></h3>
+        </div>
+        <div class="box">
+            <h3>Suhu: <span id="temp-value">Loading...</span></h3><br/><br/><br/><br/>
+        </div>
+        <button id="refreshButton"><h4 style="color:black;">Refresh Data</h4></button>
+    </div><br/><br/>
+
+    <h2>FAQ: Bagaimana solusinya jika nutrisi tanaman tidak ideal?</h2><br/>
+    <div class="faq-container">
+        <button class="faq-button" onclick="toggleFAQ('faq1'); changeH4()"><h4 id="h41" style="color: black;">1. Bagaimana cara mengatasi pH tidak ideal?    (+)</h4></button>
+        <div id="faq1" class="faq-content">
+            <p>Jika pH terlalu rendah, tambahkan larutan pH naik <i>(pH up)</i> yang biasanya berbahan dasar sodium hidroksida. Jika pH terlalu tinggi, tambahkan larutan pH turun <i>(pH down)</i> yang seringkali berbahan dasar asam sitrat atau asam fosfat.</p>
+        </div>
+        <button class="faq-button" onclick="toggleFAQ('faq2')"><h4 style="color: black;">2. Bagaimana cara mengatasi TDS tidak ideal?    (+)</h4></button>
+        <div id="faq2" class="faq-content">
+            <p>Jika TDS terlalu tinggi, tambahkan air bersih untuk menurunkan konsentrasi nutrisi. Jika TDS terlalu rendah, tambahkan nutrisi hidroponik sesuai dosis yang disarankan untuk meningkatkan kadar mineral.</p>
+        </div>
+        <button class="faq-button" onclick="toggleFAQ('faq3')"><h4 style="color: black;">3. Bagaimana cara mengatasi suhu tidak ideal?    (+)</h4></button>
+        <div id="faq3" class="faq-content">
+            <p>Jika suhu terlalu tinggi, pastikan sistem ventilasi baik, dan pertimbangkan penggunaan kipas atau peneduh untuk mengurangi panas. Jika suhu terlalu rendah, gunakan pemanas air atau insulasi pada area tanam untuk menjaga suhu tetap stabil.</p>
+        </div>
+    </div>
+    <script>
+        function toggleFAQ(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'none' || content.style.display === '' ? 'block' : 'none';
+        }
+        function changeH4(){
+            const h4_1 = document.getElementById("h41")
+            h4_1.innerHTML("1. Bagaimana cara mengatasi pH tidak ideal?    (-)")
+        }
+    </script>
+
+    <footer>
+        <h4>Bismillah... medali emas NSIF 2024</h4>
+    </footer>
+</body>
+</html>
